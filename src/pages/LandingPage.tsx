@@ -1,6 +1,9 @@
 import { FC } from 'react';
 import Button from '../components/buttons/Button';
 import GlassBox from '../components/effectboxes/GlassBox';
+import IconText from '../components/iconText/IconText';
+import SimpleUser from '../components/iconText/SimpleUser';
+import IconButton from '../components/buttons/IconButton';
 
 const LandingPage: FC = () => {
     return (
@@ -93,28 +96,80 @@ const LandingPage: FC = () => {
                         <div className="w-full bg-color-04 rounded-br-style-02 pl-16 pr-28 pb-20 pt-12">
                             <img className="w-44 h-8" src="/assets/images/Logo-Text.png" alt="Bounce features" />
                             <h4 className="font-semibold text-4xl text-white mt-9">Get the most out of your<br /> membership.</h4>
-                            <p className="text-main mt-7">Orem ipsum dolor sit amet, consectetur adipiscing elit,<br /> sed do eiusmod tempor incididunt ut labore et dolore<br /> magna aliqua. Ut enim ad minim veniam, quis nostrud<br /> exercitation ullamco laboris nisi ut aliquip ex ea<br /> commodo consequat.</p>
+                            <p className="text-main mt-7">Orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br /> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
                         </div>
                     </div>
-                    <div className="col-span-7 row-span-2 pl-32">
+                    <div className="col-span-7 row-span-2 pl-32 pr-16">
                         <div className="flex items-center">
-                            <span className="text-main mr-5 font-semibold text-2xl">02</span>
+                            <span className="text-main mr-5 font-semibold text-2xl">01</span>
                             <div className="bg-color-05 bg-opacity-5 px-4 py-2">
                                 <span className="text-color-06 font-extrabold">AFTERMARKET COMMERCE</span>
                             </div>
                         </div>
                         <h4 className="font-semibold text-4xl text-white mt-9">Capitalizing on all forms<br /> of profitable flips.</h4>
                         <p className="text-main mt-7">Orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br /> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br /> veniam.</p>
+                        <div className="bg-color-07 rounded-style-03 p-7 mt-14">
+                            <div className="flex justify-between">
+                                <span className="font-extrabold text-lg text-white">Larry Hoover Benefit Concert</span>
+                                <span className="font-extrabold text-lg text-white">$250-400</span>
+                            </div>
+                            <div className="flex mt-5">
+                                <IconText className="text-main" icon="calendar" text="December 9th, 2021"></IconText>
+                                <IconText className="text-main ml-11" icon="access-time" text="8:00 PM EST"></IconText>
+                            </div>
+                            <div className="flex mt-4">
+                                <span className="text-main flex-grow">200 Tickets Available</span>
+                                <SimpleUser avatar="user01" username="Kanye West" />
+                                <SimpleUser className="ml-7" avatar="user02" username="Drake" />
+                            </div>
+                        </div>
+                        <div className="flex justify-center relative">
+                            <div className="absolute w-full h-full grid grid-cols-12 grid-flow-row z-0">
+                                <div className="col-span-3 h-full border-r-2 border-dashed border-main"></div>
+                                <div className="col-span-3 h-full border-r-2 border-dashed border-main"></div>
+                                <div className="col-span-3 h-full border-r-2 border-dashed border-main"></div>
+                                <div className="col-span-3 h-full"></div>
+                            </div>
+                            <IconButton className="bg-color-06 rounded-full w-96 h-14 mt-20 mb-20 z-10" icon="check-circle" text="Successfully Purchased"></IconButton>
+                        </div>
+                        <div className="bg-color-07 rounded-style-03 p-7 grid grid-cols-4">
+                            <div className="col-span-2">
+                                <span className="font-semibold text-lg text-white">Tickets sold!</span><br />
+                                <span className="text-main">Larry Hoover Benefit Concert</span>
+                            </div>
+                            <div className="col-span-1">
+                                <IconText className="font-semibold text-lg text-white" icon="status-blue" text="1,200$"></IconText>
+                                <span className="text-main">Profit per unit</span>
+                            </div>
+                            <div className="col-span-1">
+                                <IconText className="font-semibold text-lg text-white" icon="status-green" text="4,800$"></IconText>
+                                <span className="text-main">Total profit</span>
+                            </div>
+                        </div>
                     </div>
                     <div className="col-span-5 row-span-1 pl-16 mt-20">
                         <div className="flex items-center">
-                            <span className="text-main mr-5 font-semibold text-2xl">01</span>
+                            <span className="text-main mr-5 font-semibold text-2xl">02</span>
                             <div className="bg-color-05 bg-opacity-5 px-4 py-2">
                                 <span className="text-color-05 font-extrabold">DIGITAL MARKETS</span>
                             </div>
                         </div>
                         <h4 className="font-semibold text-4xl text-white mt-9">Diversify your gain in<br /> digital markets.</h4>
                         <p className="text-main mt-7">Orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br /> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br /> veniam,  </p>
+                    </div>
+                </div>
+                <div className="grid grid-cols-12 grid-flow-row">
+                    <div className="col-span-7">
+                    </div>
+                    <div className="col-span-5 pr-16 mt-20">
+                        <div className="flex items-center justify-end">
+                            <span className="text-main mr-5 font-semibold text-2xl">03</span>
+                            <div className="bg-color-08 bg-opacity-5 px-4 py-2">
+                                <span className="text-color-08 font-extrabold">EXCLUSIVE BENEFITS</span>
+                            </div>
+                        </div>
+                        <h4 className="font-semibold text-4xl text-white mt-9 text-right">Successful arbritrage at<br /> its finest.</h4>
+                        <p className="text-main mt-6 text-right">Orem ipsum dolor sit amet, consectetur adipiscing<br /> elit, sed do eiusmod tempor incididunt ut labore et<br /> dolore magna aliqua. Ut enim ad minim veniam.<br /> quis nostrud exercitation ullamco laboris nisi ut<br /> aliquip ex ea commodo consequat. </p>
                     </div>
                 </div>
             </div>

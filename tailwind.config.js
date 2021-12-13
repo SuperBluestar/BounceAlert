@@ -17,6 +17,8 @@ module.exports = {
         'color-04': '#0F0F1D',
         'color-05': '#BD922B',
         'color-06': '#21BF75',
+        'color-07': '#0C0C17',
+        'color-08': '#8EC8FD',
       },
       boxShadow: {
         'inner-01': 'inset 0px 87.3046px 129.838px -80.5888px rgba(255, 255, 255, 0.5), inset 0px 15.6701px 24.6244px -8.95432px #FFFFFF, inset 0px -183.563px 152.223px -143.269px rgba(96, 68, 144, 0.3), inset 0px 219.381px 223.858px -107.452px rgba(202, 172, 255, 0.3), inset 0px 8.95432px 40.2944px rgba(154, 146, 210, 0.3), inset 0px 2.23858px 89.5431px rgba(227, 222, 239, 0.2)',
@@ -25,9 +27,13 @@ module.exports = {
       borderRadius: {
         'style-01': '3rem',
         'style-02': '1.875rem',
+        'style-03': '1.125rem',
       },
       flexGrow: {
         '0.5': '0.5'
+      },
+      zIndex: {
+        '-10': '-10',
       }
     },
   },
