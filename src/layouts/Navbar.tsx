@@ -20,7 +20,7 @@ function detectMob() {
 }
 
 const Navbar: FC<{}> = () => {
-    const [ isExpanded, setExpanded ] = useState(true)
+    const [ isExpanded, setExpanded ] = useState(!detectMob())
     const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded });
     return (
         <div id="navbar" className="bg-black xl:bg-transparent flex h-40 items-center px-16 relative z-50">
@@ -43,7 +43,7 @@ const Navbar: FC<{}> = () => {
                     <span className="font-medium mr-0 xl:mr-12 text-main hover:text-white cursor-pointer">FAQ</span>
                     <span className="font-medium mr-0 xl:mr-12 text-main hover:text-white cursor-pointer">Terms of Service</span>
                     <span className="font-medium mr-0 xl:mr-12 text-main hover:text-white cursor-pointer xl:hidden">Dashboard</span>
-                    <div className="hidden xl:show xl:flex xl:flex-grow xl:justify-end">
+                    <div className="hidden xl:show xl:flex xl:flex-grow xl:justify-end pr-16">
                         <Button className="bg-color-01 cursor-pointer">
                             <span>Dashboard</span>
                         </Button>
