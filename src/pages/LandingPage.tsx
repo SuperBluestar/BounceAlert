@@ -47,7 +47,7 @@ const LandingPage: FC = () => {
     };
     return (
         <>
-            <div className="container mx-auto bg-gradient-to-bl from-main via-black to-black relative">
+            <div className="bg-gradient-to-bl from-main via-black to-black relative">
                 <Navbar />
                 <div className="flex-col items-center lg:flex-row lg:justify-start flex pl-24 pr-24 mt-20 relative">
                     <div className="flex-grow-0 w-auto lg:w-96 xl:w-128">
@@ -95,7 +95,7 @@ const LandingPage: FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="container mx-auto bg-black">
+            <div className="bg-black">
                 <div className="flex items-center pl-24 pr-24 pt-44 pb-20 lg:pb-44">
                     <div className="border-b-2 border-color-03 flex-grow"></div>
                     <div className="ml-16 mr-16">
@@ -279,7 +279,7 @@ const LandingPage: FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="container mx-auto bg-black">
+            <div className="bg-black">
                 <div className="grid grid-cols-12">
                     <div className="col-span-2 xl:col-span-3"></div>
                     <div className="col-span-8 xl:col-span-6 py-28">
@@ -296,7 +296,7 @@ const LandingPage: FC = () => {
                     <div className="col-span-2 xl:col-span-3"></div>
                 </div>
             </div>
-            <div className="container mx-auto bg-black border-b border-color-09 border-dashed">
+            <div className="bg-black border-b border-color-09 border-dashed">
                 <div className="flex w-full h-10">
                     <div className="h-full rounded-tr-full bg-color-04 flex-grow"></div>
                     <div className="w-12 h-12">
@@ -322,7 +322,7 @@ const LandingPage: FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="container mx-auto bg-black-01 h-40 relative">
+            <div className="bg-black-01 h-40 relative">
                 <AppLogoText className="absolute left-2/4 transform -translate-x-2/4 top-2 xl:top-2/4 xl:-translate-y-2/4 cursor-pointer"/>
                 <div className="grid grid-cols-2 grid-flow-row w-full h-full">
                     <div className="col-span-1 flex justify-center items-end mb-4 xl:mb-0 xl:items-center">
