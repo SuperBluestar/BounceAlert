@@ -1,4 +1,4 @@
-import { FC, ReactNode, ReactPropTypes } from "react";
+import { FC, ReactPropTypes } from "react";
 
 interface ISimpleUser {
     avatar?: String;

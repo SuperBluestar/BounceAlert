@@ -1,4 +1,4 @@
-import { FC, Component, ReactNode, ReactPropTypes } from "react"
+import { FC, ReactNode, ReactPropTypes } from "react"
 
 interface IButton {
     children?: String | ReactNode;
@@ -9,7 +9,7 @@ interface IButton {
 const Button: FC<IButton> = ({ className = "", props, children = <></> }: IButton) => {
     return (
         <div 
-            className={`w-48 h-11 rounded-md text-white flex justify-center items-center ${className}`}
+            className={`w-36 md:w-48 h-11 rounded-md text-white flex justify-center items-center ${className}`}
             {...props}
         >
         {children}
