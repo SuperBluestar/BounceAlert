@@ -120,7 +120,7 @@ const LandingPage: FC = () => {
                             <div className="h-full xl:rounded-tr-style-02 bg-color-04 flex-grow-0.5"></div>
                         </div>
                         <div className="w-full bg-color-04 xl:rounded-br-style-02 pl-16 pr-28 pb-20 pt-12">
-                            <img className="w-44 h-8" src="/assets/images/Logo-Text.png" alt="Bounce features" />
+                            <AppText textSizeClassName="text-2xl"/>
                             <h4 className="font-semibold text-4xl text-white mt-9">Get the most out of your membership.</h4>
                             <p className="text-main mt-7">Orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
                         </div>
