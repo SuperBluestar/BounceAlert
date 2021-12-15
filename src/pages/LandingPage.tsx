@@ -313,7 +313,7 @@ const LandingPage: FC = () => {
                     <div className="h-full rounded-tl-full bg-color-04 flex-grow-0.5"></div>
                     <div className="h-full bg-color-04 flex-grow-0.5"></div>
                 </div>
-                <div className=" bg-color-04 p-16">
+                <div className=" bg-color-04 px-4 sm:px-16 py-16">
                     <div className="grid grid-cols-12 grid-flow-row">
                         <div className="col-span-12 xl:col-span-6">
                         {[1,2,3,4].map((val, id) => (
