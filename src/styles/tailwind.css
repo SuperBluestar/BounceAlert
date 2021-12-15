@@ -31,3 +31,13 @@
     height: 5px;
     border-radius: 10px;
 }
+
+@font-face {
+    font-family: "Along Sans s2";
+    /* src: 'url(/assets/fonts/AlongSanss2-Regular.woff") format("woff")'; */
+    src: 'url(/assets/fonts/AlongSanss2-Regular.ttf") format("truetype")';
+}
+
+* {
+    font-family: "Along Sans s2";
+}

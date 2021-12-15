@@ -60,6 +60,9 @@ module.exports = {
         'gradient-radial-at-tr': 'radial-gradient(ellipse at top right, var(--tw-gradient-stops))', 
         'gradient-radial-at-bl': 'radial-gradient(ellipse at bottom left, var(--tw-gradient-stops))', 
         'gradient-radial-at-br': 'radial-gradient(ellipse at bottom right, var(--tw-gradient-stops))', 
+      },
+      fontFamily: {
+        'along-sans-s2': ['"Along Sans s2"'],
       }
     },
   },

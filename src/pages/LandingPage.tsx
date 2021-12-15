@@ -52,7 +52,7 @@ const LandingPage: FC = () => {
             <div className="bg-gradient-to-bl from-main via-black to-black relative">
                 <Navbar />
                 <div className="flex-col items-center lg:flex-row lg:justify-start flex pl-24 pr-24 mt-20 relative">
-                    <CircleEffect effectId="04" sizeClassName="w-256 h-256" positionClassName="absolute left-2/4 transform -translate-x-2/4 -mt-32" layerClassName="z-0"/>
+                    <CircleEffect effectId="04" sizeClassName="w-256 h-256" positionClassName="hidden lg:block absolute left-2/4 transform -translate-x-2/4 -mt-32" layerClassName="z-0"/>
                     <CircleEffect effectId="04" sizeClassName="w-200 h-200" positionClassName="absolute -ml-28 -mt-36" layerClassName="z-10" className="bg-opacity-70" />
                     <div className="flex-grow-0 w-screen lg:w-96 xl:w-128 z-30 px-4">
                         <div className="max-w-full w-96 h-28">
