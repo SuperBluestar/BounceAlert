@@ -8,6 +8,7 @@ import LiquidBounce from '../components/appComponents/LiquidBounce';
 import CollapsableComponent from '../components/appComponents/CollapsableComponent';
 import AppLogoText from '../components/appComponents/AppLogoText';
 import AppText from '../components/appComponents/AppText';
+import CircleEffect from '../components/appComponents/CircleEffect';
 
 import { default as Slider, Settings, CustomArrowProps } from "react-slick";
 
@@ -51,7 +52,9 @@ const LandingPage: FC = () => {
             <div className="bg-gradient-to-bl from-main via-black to-black relative">
                 <Navbar />
                 <div className="flex-col items-center lg:flex-row lg:justify-start flex pl-24 pr-24 mt-20 relative">
-                    <div className="flex-grow-0 w-auto lg:w-96 xl:w-128">
+                    <CircleEffect effectId="04" sizeClassName="w-256 h-256" positionClassName="absolute left-2/4 transform -translate-x-2/4 -mt-32" layerClassName="z-0"/>
+                    <CircleEffect effectId="04" sizeClassName="w-200 h-200" positionClassName="absolute -ml-28 -mt-36" layerClassName="z-10" className="bg-opacity-70" />
+                    <div className="flex-grow-0 w-auto lg:w-96 xl:w-128 z-30">
                         <div className="w-96 h-28">
                             <AppText textSizeClassName="text-7xl"/>
                             <span className="font-light text-main">by <b className="font-extrabold">bounce</b> software</span>
@@ -71,7 +74,7 @@ const LandingPage: FC = () => {
                             </Button>
                         </div>
                     </div>
-                    <div className="mt-6 lg:mt-0 relative flex-grow h-96 w-96">
+                    <div className="mt-6 lg:mt-0 relative flex-grow h-96 w-96 z-30">
                         <GlassBox className="absolute right-0 top-0 w-96 h-96 rounded-style-01">
                             <img className="w-48 h-48" src="/assets/images/Logo.png" alt="Logo" />
                         </GlassBox>
@@ -149,13 +152,14 @@ const LandingPage: FC = () => {
                             </div>
                         </div>
                         <div className="flex justify-center relative">
+                            <CircleEffect effectId="05" sizeClassName="w-96 h-96" positionClassName="absolute -mt-24 ml-6 left-0"></CircleEffect>
                             <div className="absolute w-full h-full grid grid-cols-12 grid-flow-row z-0">
                                 <div className="col-span-3 h-full border-r-2 border-dashed border-main"></div>
                                 <div className="col-span-3 h-full border-r-2 border-dashed border-main"></div>
                                 <div className="col-span-3 h-full border-r-2 border-dashed border-main"></div>
                                 <div className="col-span-3 h-full"></div>
                             </div>
-                            <IconButton className="bg-color-06 rounded-full w-96 h-14 mt-20 mb-20 z-10" icon="check-circle" text="Successfully Purchased"></IconButton>
+                            <IconButton className="bg-color-06 rounded-full w-96 h-14 mt-20 mb-20 z-10 text-white" icon="check-circle" text="Successfully Purchased"></IconButton>
                         </div>
                         <div className="bg-color-07 rounded-style-03 p-7 grid grid-cols-3 sm:grid-cols-4">
                             <div className="col-span-3 sm:col-span-2 flex flex-col items-center sm:items-start">
@@ -187,6 +191,7 @@ const LandingPage: FC = () => {
                 </div>
                 <div className="grid grid-cols-12 grid-flow-row border-b border-color-09">
                     <div className="col-span-12 xl:col-span-7 px-6 xl:px-0">
+                        <CircleEffect effectId="05" sizeClassName="w-128 h-128" positionClassName="absolute mt-12 ml-32"></CircleEffect>
                         <div className="flex-col md:flex-row flex items-center justify-center mt-14">
                             <div className="">
                                 <div className="w-80 h-60 flex justify-center">

@@ -8,6 +8,13 @@ module.exports = {
     extend: {
       width: {
         '128': '36rem',
+        '200': '47.25rem',
+        '256': '55rem',
+      },
+      height: {
+        '128': '36rem',
+        '200': '47.25rem',
+        '256': '55rem',
       },
       colors: {
         colors,
@@ -25,6 +32,8 @@ module.exports = {
         'color-08': '#8EC8FD',
         'color-09': '#27273E',
         'color-10': '#131322',
+        'color-11': '#EBE7F6',
+        'color-12': '#FFFFFF',
       },
       boxShadow: {
         'inner-01': 'inset 0px 87.3046px 129.838px -80.5888px rgba(255, 255, 255, 0.5), inset 0px 15.6701px 24.6244px -8.95432px #FFFFFF, inset 0px -183.563px 152.223px -143.269px rgba(96, 68, 144, 0.3), inset 0px 219.381px 223.858px -107.452px rgba(202, 172, 255, 0.3), inset 0px 8.95432px 40.2944px rgba(154, 146, 210, 0.3), inset 0px 2.23858px 89.5431px rgba(227, 222, 239, 0.2)',
@@ -40,6 +49,17 @@ module.exports = {
       },
       zIndex: {
         '-10': '-10',
+      },
+      backgroundImage: { 
+        'gradient-radial': 'radial-gradient(ellipse at center, var(--tw-gradient-stops))', 
+        'gradient-radial-at-t': 'radial-gradient(ellipse at top, var(--tw-gradient-stops))', 
+        'gradient-radial-at-b': 'radial-gradient(ellipse at bottom, var(--tw-gradient-stops))', 
+        'gradient-radial-at-l': 'radial-gradient(ellipse at left, var(--tw-gradient-stops))', 
+        'gradient-radial-at-r': 'radial-gradient(ellipse at right, var(--tw-gradient-stops))', 
+        'gradient-radial-at-tl': 'radial-gradient(ellipse at top left, var(--tw-gradient-stops))', 
+        'gradient-radial-at-tr': 'radial-gradient(ellipse at top right, var(--tw-gradient-stops))', 
+        'gradient-radial-at-bl': 'radial-gradient(ellipse at bottom left, var(--tw-gradient-stops))', 
+        'gradient-radial-at-br': 'radial-gradient(ellipse at bottom right, var(--tw-gradient-stops))', 
       }
     },
   },
