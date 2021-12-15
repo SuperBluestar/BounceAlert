@@ -18,7 +18,7 @@ const SamplePrevArrow: FC<CustomArrowProps> = (props: CustomArrowProps) => {
     const { onClick } = props;
     return (
         <div
-            className="absolute -left-16 top-2/4 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer p-4"
+            className="absolute -left-4 sm:-left-16 top-2/4 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer p-4"
             onClick={onClick}
         >
             <img src="/assets/images/icon/left-arrow.png" alt="Left" />
@@ -30,7 +30,7 @@ const SampleNextArrow: FC<CustomArrowProps> = (props: CustomArrowProps) => {
     const { onClick } = props;
     return (
         <div
-            className="absolute -right-16 top-2/4 transform translate-x-1/2 -translate-y-1/2 cursor-pointer p-4"
+            className="absolute -right-4 sm:-right-16 top-2/4 transform translate-x-1/2 -translate-y-1/2 cursor-pointer p-4"
             onClick={onClick}
         >
             <img src="/assets/images/icon/right-arrow.png" alt="Right" />
@@ -54,8 +54,8 @@ const LandingPage: FC = () => {
                 <div className="flex-col items-center lg:flex-row lg:justify-start flex pl-24 pr-24 mt-20 relative">
                     <CircleEffect effectId="04" sizeClassName="w-256 h-256" positionClassName="absolute left-2/4 transform -translate-x-2/4 -mt-32" layerClassName="z-0"/>
                     <CircleEffect effectId="04" sizeClassName="w-200 h-200" positionClassName="absolute -ml-28 -mt-36" layerClassName="z-10" className="bg-opacity-70" />
-                    <div className="flex-grow-0 w-auto lg:w-96 xl:w-128 z-30">
-                        <div className="w-96 h-28">
+                    <div className="flex-grow-0 w-screen lg:w-96 xl:w-128 z-30 px-4">
+                        <div className="max-w-full w-96 h-28">
                             <AppText textSizeClassName="text-7xl"/>
                             <span className="font-light text-main">by <b className="font-extrabold">bounce</b> software</span>
                         </div>
@@ -74,11 +74,11 @@ const LandingPage: FC = () => {
                             </Button>
                         </div>
                     </div>
-                    <div className="mt-6 lg:mt-0 relative flex-grow h-96 w-96 z-30">
-                        <GlassBox className="absolute right-0 top-0 w-96 h-96 rounded-style-01">
+                    <div className="mt-6 lg:mt-0 relative flex-grow h-auto lg:h-96 px-4 lg:px-0 w-screen lg:w-96 z-30">
+                        <GlassBox className="relative lg:absolute lg:right-0 top-0 w-80 h-80 lg:w-96 lg:h-96 rounded-style-01 mx-auto">
                             <img className="w-48 h-48" src="/assets/images/Logo.png" alt="Logo" />
                         </GlassBox>
-                        <GlassBox className="absolute right-8 top-80 xl:right-72 xl:top-40 w-80 h-20 shadow-inner-02 rounded-2xl backdrop-filter backdrop-blur">
+                        <GlassBox className="relative lg:absolute lg:right-8 lg:top-80 xl:right-72 xl:top-40 w-80 h-20 shadow-inner-02 rounded-2xl backdrop-filter backdrop-blur mx-auto">
                             <div className="font-medium">
                                 <span className="text-color-02">Item Restocked</span>
                                 <div className="flex items-center mt-2.5 text-white">
@@ -87,7 +87,7 @@ const LandingPage: FC = () => {
                                 </div>
                             </div>
                         </GlassBox>
-                        <GlassBox className="absolute right-8 top-80 mt-24 xl:right-24 xl:top-80 xl:mt-0 w-80 h-20 shadow-inner-02 rounded-2xl backdrop-filter backdrop-blur">
+                        <GlassBox className="relative lg:absolute lg:right-8 lg:top-80 mt-2 lg:mt-24 mb-2 xl:right-24 xl:top-80 xl:mt-0 w-80 h-20 shadow-inner-02 rounded-2xl backdrop-filter backdrop-blur mx-auto">
                             <div className="font-medium">
                                 <span className="text-color-02">Item Sold</span>
                                 <div className="flex items-center mt-2.5 text-white">
@@ -100,7 +100,7 @@ const LandingPage: FC = () => {
                 </div>
             </div>
             <div className="bg-black">
-                <div className="flex items-center pl-24 pr-24 pt-44 pb-20 lg:pb-44">
+                <div className="flex items-center pl-24 pr-24 pt-20 lg:pt-44 pb-20 lg:pb-44">
                     <div className="border-b-2 border-color-03 flex-grow"></div>
                     <div className="ml-16 mr-16">
                         <img src="/assets/images/Logo.png" alt="Gif" />
@@ -190,8 +190,8 @@ const LandingPage: FC = () => {
                     </div>
                 </div>
                 <div className="grid grid-cols-12 grid-flow-row border-b border-color-09">
-                    <div className="col-span-12 xl:col-span-7 px-6 xl:px-0">
-                        <CircleEffect effectId="05" sizeClassName="w-128 h-128" positionClassName="absolute mt-12 ml-32"></CircleEffect>
+                    <div className="col-span-12 xl:col-span-7 px-0 md:px-6 xl:px-0">
+                        <CircleEffect effectId="05" sizeClassName="max-w-full w-128 h-128" positionClassName="absolute ml-0 xl:mt-12 xl:ml-32"></CircleEffect>
                         <div className="flex-col md:flex-row flex items-center justify-center mt-14">
                             <div className="">
                                 <div className="w-80 h-60 flex justify-center">
