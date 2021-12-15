@@ -24,7 +24,7 @@ const Navbar: FC<{}> = () => {
     const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded });
     return (
         <div id="navbar" className="bg-black xl:bg-transparent flex h-40 items-center px-16 relative z-50">
-            <AppLogoText id="navbar-logo" className="mr-16" />
+            <AppLogoText id="navbar-logo" textSizeClassName="mr-16" />
             <div className="flex-grow flex justify-end xl:hidden">
                 <img 
                     className="w-12 h-12 p-3" 

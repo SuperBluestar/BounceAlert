@@ -42,7 +42,7 @@ const Navbar: FC<{}> = () => {
     return (
         <>
         <div id="navbar" className={`bg-transparent flex h-40 items-center px-16 z-50 w-full ${openMenu ? "bg-black" : ""} ${menuFixed ? "fixed top-0 bg-black" : "relative"}`}>
-            <AppLogoText id="navbar-logo" className="mr-16" />
+            <AppLogoText id="navbar-logo" className="mr-16" textSizeClassName="text-2xl" />
             <div className="flex-grow flex justify-end xl:hidden">
                 <HamburgerMenu 
                     isOpen={openMenu} 

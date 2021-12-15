@@ -7,6 +7,7 @@ import IconButton from '../components/buttons/IconButton';
 import LiquidBounce from '../components/appComponents/LiquidBounce';
 import CollapsableComponent from '../components/appComponents/CollapsableComponent';
 import AppLogoText from '../components/appComponents/AppLogoText';
+import AppText from '../components/appComponents/AppText';
 
 import { default as Slider, Settings, CustomArrowProps } from "react-slick";
 
@@ -52,7 +53,7 @@ const LandingPage: FC = () => {
                 <div className="flex-col items-center lg:flex-row lg:justify-start flex pl-24 pr-24 mt-20 relative">
                     <div className="flex-grow-0 w-auto lg:w-96 xl:w-128">
                         <div className="w-96 h-28">
-                            <img className="w-full h-full" src="/assets/images/Logo-Text.png" alt="Logo Text" />
+                            <AppText textSizeClassName="text-7xl"/>
                             <span className="font-light text-main">by <b className="font-extrabold">bounce</b> software</span>
                         </div>
                         <div className="mt-16">
@@ -323,7 +324,7 @@ const LandingPage: FC = () => {
                 </div>
             </div>
             <div className="bg-black-01 h-40 relative">
-                <AppLogoText className="absolute left-2/4 transform -translate-x-2/4 top-2 xl:top-2/4 xl:-translate-y-2/4 cursor-pointer"/>
+                <AppLogoText className="absolute left-2/4 transform -translate-x-2/4 top-2 xl:top-2/4 xl:-translate-y-2/4 cursor-pointer" textSizeClassName="text-2xl"/>
                 <div className="grid grid-cols-2 grid-flow-row w-full h-full">
                     <div className="col-span-1 flex justify-center items-end mb-4 xl:mb-0 xl:items-center">
                         <IconText className="text-white cursor-pointer" icon="twitter" text="@bouncesoftware"></IconText>
