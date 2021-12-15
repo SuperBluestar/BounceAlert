@@ -30,9 +30,9 @@ const Navbar: FC<{}> = () => {
     });
     const [menuFixed, toggleMenuFixed] = useState(false);
     const stickyMenu: any = (e: Window, ev: Event) => {
-        if (window.scrollY > 120 && !menuFixed) {
+        if (window.scrollY > 160 && !menuFixed) {
             toggleMenuFixed(true);
-        } else if (window.scrollY < 120 && menuFixed) {
+        } else if (window.scrollY <= 160 && menuFixed) {
             toggleMenuFixed(false);
         }
     }
@@ -45,7 +45,7 @@ const Navbar: FC<{}> = () => {
     console.log("Navbar rendering")
     return (
         <>
-        <div id="navbar" className={`transition transition-all delay-700 bg-transparent flex h-40 items-center px-6 md:px-16 z-50 w-full bg-black bg-opacity-0 ${openMenu ? "bg-opacity-100" : ""} ${menuFixed ? "fixed top-0 bg-opacity-100" : "relative"}`}>
+        <div id="navbar" className={`bg-transparent flex h-40 items-center px-6 md:px-16 z-50 w-full ${menuFixed ? "fixed top-0 bg-black" : "relative"}`}>
             <AppLogoText id="navbar-logo" className="mr-16" textSizeClassName="text-2xl" />
             <div className="flex-grow flex justify-end xl:hidden">
                 <HamburgerMenu 

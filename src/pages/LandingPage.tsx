@@ -328,7 +328,7 @@ const LandingPage: FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-black-01 h-40 relative">
+            {/* <div className="bg-black-01 h-40 relative">
                 <AppLogoText className="absolute left-2/4 transform -translate-x-2/4 top-2 xl:top-2/4 xl:-translate-y-2/4 cursor-pointer" textSizeClassName="text-2xl"/>
                 <div className="grid grid-cols-2 grid-flow-row w-full h-full">
                     <div className="col-span-1 flex justify-center items-end mb-4 xl:mb-0 xl:items-center">
@@ -337,6 +337,15 @@ const LandingPage: FC = () => {
                     <div className="col-span-1 flex justify-center items-end mb-4 xl:mb-0 xl:items-center">
                         <IconText className="text-white cursor-pointer" icon="instagram" text="@bouncesoftware"></IconText>
                     </div>
+                </div>
+            </div> */}
+            <div className="bg-black-01 h-40 grid grid-cols-3 grid-flow-row">
+                <div className="col-span-3 md:col-span-1 flex justify-center items-center cursor-pointer">
+                    <IconText className="text-white cursor-pointer" icon="twitter" text="@bouncesoftware"></IconText>
+                </div>
+                <AppLogoText className="col-span-3 md:col-span-1 flex justify-center items-center cursor-pointer" textSizeClassName="text-2xl"/>
+                <div className="col-span-3 md:col-span-1 flex justify-center items-center cursor-pointer">
+                    <IconText className="text-white cursor-pointer" icon="instagram" text="@bouncesoftware"></IconText>
                 </div>
             </div>
         </>
