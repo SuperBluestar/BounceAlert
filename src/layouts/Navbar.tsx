@@ -26,7 +26,7 @@ const Navbar: FC<{}> = () => {
     const [openMenu, toggleOpenMenu] = useState(false);
     const { getCollapseProps, getToggleProps } = useCollapse({ 
         isExpanded: openMenu,
-        duration: 1500,
+        duration: 350,
     });
     const [menuFixed, toggleMenuFixed] = useState(false);
     const stickyMenu: any = (e: Window, ev: Event) => {
@@ -75,7 +75,7 @@ const Navbar: FC<{}> = () => {
                 </div>
             </div>
             <div 
-                className={`xl:hidden absolute top-40 w-full -mx-6 md:-mx-16 flex flex-col items-end h-screen transition transition-all delay-700 overflow-hidden`} 
+                className={`xl:hidden absolute top-40 w-full -mx-6 md:-mx-16 flex flex-col items-end h-screen overflow-hidden`} 
                 {...getCollapseProps()}
             >
                 <div className="bg-black flex flex-col px-16 w-full">
