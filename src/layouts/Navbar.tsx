@@ -45,7 +45,7 @@ const Navbar: FC<{}> = () => {
     console.log("Navbar rendering")
     return (
         <>
-        <div id="navbar" className={`bg-transparent flex h-40 items-center px-6 md:px-16 z-50 w-full ${menuFixed ? "fixed top-0 bg-black" : "relative"}`}>
+        <div id="navbar" className={`bg-black xl:bg-transparent flex h-40 items-center px-6 md:px-16 z-50 w-full ${menuFixed ? "fixed top-0 xl:bg-black" : "relative"}`}>
             <AppLogoText id="navbar-logo" className="mr-16" textSizeClassName="text-2xl" />
             <div className="flex-grow flex justify-end xl:hidden">
                 <HamburgerMenu 
