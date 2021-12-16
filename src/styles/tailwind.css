@@ -35,6 +35,8 @@
 @font-face {
     font-family: "Along Sans s2";
     src: url("./font/AlongSanss2-Regular.woff") format("woff");
+    /* src: url("./font/AlongSanss2-Regular.ttf") format("truetype"); */
+    src: url("./font/AlongSanss2-Regular.otf") format("opentype");
 }
 
 * {

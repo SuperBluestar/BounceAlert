@@ -8,6 +8,7 @@ import LiquidBounce from '../components/appComponents/LiquidBounce';
 import CollapsableComponent from '../components/appComponents/CollapsableComponent';
 import AppLogoText from '../components/appComponents/AppLogoText';
 import AppText from '../components/appComponents/AppText';
+import AppLogo from '../components/appComponents/AppLogo';
 import CircleEffect from '../components/appComponents/CircleEffect';
 
 import { default as Slider, Settings, CustomArrowProps } from "react-slick";
@@ -54,8 +55,8 @@ const LandingPage: FC = () => {
                 <div className="flex-col items-center lg:flex-row lg:justify-start flex pl-24 pr-24 mt-20 relative">
                     <CircleEffect effectId="04" sizeClassName="w-256 h-256" positionClassName="hidden lg:block absolute left-2/4 transform -translate-x-2/4 -mt-32" layerClassName="z-0"/>
                     <CircleEffect effectId="04" sizeClassName="w-200 h-200" positionClassName="absolute -ml-28 -mt-36" layerClassName="z-10" className="bg-opacity-70" />
-                    <div className="flex-grow-0 w-screen lg:w-96 xl:w-128 z-30 px-4">
-                        <div className="max-w-full w-96 h-28">
+                    <div className="flex-grow-0 w-screen lg:w-96 xl:w-128 z-30 px-4 text-center lg:text-left">
+                        <div className="max-w-full w-auto h-28 text-center lg:text-left">
                             <AppText textSizeClassName="text-7xl"/>
                             <span className="font-light text-main">by <b className="font-extrabold">bounce</b> software</span>
                         </div>
@@ -76,7 +77,7 @@ const LandingPage: FC = () => {
                     </div>
                     <div className="mt-6 lg:mt-0 relative flex-grow h-auto lg:h-96 px-4 lg:px-0 w-screen lg:w-96 z-30">
                         <GlassBox className="relative lg:absolute lg:right-0 top-0 w-80 h-80 lg:w-96 lg:h-96 rounded-style-01 mx-auto">
-                            <img className="w-48 h-48" src="/assets/images/Logo.png" alt="Logo" />
+                            <AppLogo size={48} />
                         </GlassBox>
                         <GlassBox className="relative lg:absolute lg:right-8 lg:top-80 xl:right-72 xl:top-40 w-80 h-20 shadow-inner-02 rounded-2xl backdrop-filter backdrop-blur mx-auto">
                             <div className="font-medium">
@@ -103,7 +104,7 @@ const LandingPage: FC = () => {
                 <div className="flex items-center pl-24 pr-24 pt-20 lg:pt-44 pb-20 lg:pb-44">
                     <div className="border-b-2 border-color-03 flex-grow"></div>
                     <div className="ml-16 mr-16">
-                        <img src="/assets/images/Logo.png" alt="Gif" />
+                        <AppLogo size={48}></AppLogo>
                     </div>
                     <div className="border-b-2 border-color-03 flex-grow"></div>
                 </div>
@@ -321,8 +322,8 @@ const LandingPage: FC = () => {
                         ))}
                         </div>
                         <div className="col-span-12 xl:col-span-6 flex flex-col items-center xl:items-end xl:pl-20">
-                            <img className="w-48 h-8" src="/assets/images/Logo-Text.png" alt="Logo Text"></img>
-                            <h4 className="mt-9 text-4xl text-white font-semibold text-right">All your questions answered in one place.</h4>
+                            <AppText text="questions" textSizeClassName="text-2xl" />
+                            <h4 className="mt-9 text-4xl text-white font-semibold text-center xl:text-right">All your questions answered in one place.</h4>
                             <span className="mt-7 text-main text-center xl:text-right">Orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
                         </div>
                     </div>

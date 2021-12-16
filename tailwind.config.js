@@ -60,6 +60,7 @@ module.exports = {
         'gradient-radial-at-tr': 'radial-gradient(ellipse at top right, var(--tw-gradient-stops))', 
         'gradient-radial-at-bl': 'radial-gradient(ellipse at bottom left, var(--tw-gradient-stops))', 
         'gradient-radial-at-br': 'radial-gradient(ellipse at bottom right, var(--tw-gradient-stops))', 
+        'conic-spec-01': "conic-gradient(from 52.05deg at 50.61% 60.33%, #56AEFF -73.13deg, #EC78FF 67.5deg, #966CF4 191.25deg, #56AEFF 286.87deg, #EC78FF 427.5deg)",
       },
       fontFamily: {
         'along-sans-s2': ['"Along Sans s2"'],
